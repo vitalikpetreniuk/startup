@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	$('.header__close, .burger').click(() => {
 		$('.header__nav').toggleClass('active')
+		$('body').toggleClass('_over-hidden')
 	})
 
 	const timer = document.querySelector('.timer');

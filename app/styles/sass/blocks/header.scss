@@ -26,8 +26,9 @@
 			right: 0;
 		}
 		@include media-max(991) {
+			overflow-y: auto;
 			padding: 65px 0 0 0;
-			position: absolute;
+			position: fixed;
 			top: 0;
 			right: -100%;
 			width: 100%;
@@ -42,6 +43,7 @@
 			width: 100%;
 			@include media-max(991) {
 				flex-direction: column;
+				padding-bottom: 40px;
 			}
 			@include media-max(575) {
 				align-items: flex-start !important;
