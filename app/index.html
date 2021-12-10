@@ -1,12 +1,498 @@
-<!--#set var="title" value="OptimizedHTML 5" -->
-<!--#include virtual="/parts/header.html" -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+		<title>Startup</title>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+		<link rel="stylesheet" href="css/fancy-timer.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+	
+		<header class="header d-flex align-items-center">
+			<a href="#" class="header__logo">
+				<img src="images/dist/logo.svg" alt="">
+			</a>
+			<nav class="header__nav">
+				<ul class="d-flex justify-content-between align-items-center">
+					<li>
+						<a href="">Головна</a>
+					</li>
+					<li class="current">
+						<a href="">Інформація</a>
+					</li>
+					<li>
+						<a href="">Програма</a>
+					</li>
+					<li>
+						<a href="">Команда</a>
+					</li>
+					<li>
+						<a href="">Галерея</a>
+					</li>
+					<li>
+						<a href="">Відповіді на питання</a>
+					</li>
+					<li>
+						<a href="">Контакти</a>
+					</li>
+					<li>
+						<a href="">Реєстрація</a>
+					</li>
+				</ul>
+				<div class="header__close close">
+					<img src="images/dist/icons/icon-close.svg" alt="close">
+				</div>
+			</nav>
+		</header>
+		
+		<div class="main-video">
+			<video autoplay muted loop id="campVideo">
+				<source src="videos/promo.mp4" type="video/mp4">
+			</video>
+			<div class="main-video__frame">
+				<img class="desktop" src="images/dist/frame.svg" alt="">
+				<img class="mobile" src="images/dist/frame-mobile.svg" alt="">
+				<div class="d-flex flex-column align-items-center">
+					<time datetime="2021-07-03">03.07.2021</time>
+					<h1>STARTUP CAMP</h1>
+					<span>7-15 років</span>
+				</div>
+			</div>
+			<div class="main-video__burger">
+				<div class="burger d-flex flex-column">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="main-video__logo">
+				<img src="images/dist/logo.svg" alt="logo">
+			</div>
+			<div class="main-video__btn">
+				<button>
+					<img src="images/dist/icons/icon-phone.svg" alt="phone">
+				</button>
+			</div>
+		</div>
+		
+		<div class="counter">
+			<div class="timer d-flex justify-content-center align-items-center"></div>
+		</div>
+		
+		<div class="flags">
+			<div class="flags__container container">
+				<div class="flags__row d-flex align-items-center justify-content-center">
+					<div class="flags__shadow">
+						<div class="flags__figure d-flex align-items-center justify-content-center">
+							<span>03.07.2021 - 10.07.2021</span>
+						</div>
+					</div>
+					<span class="flags__question">Коли?</span>
+				</div>
+				<div class="flags__row d-flex align-items-center justify-content-center flex-row-reverse">
+					<div class="flags__shadow">
+						<div class="flags__figure yellow d-flex align-items-center justify-content-center">
+							<span>с. Дубечне <br> 125 км від Луцька</span>
+						</div>
+					</div>
+					<span class="flags__question">Де?</span>
+				</div>
+				<div class="flags__row d-flex align-items-center justify-content-center">
+					<div class="flags__shadow">
+						<div class="flags__figure blue d-flex align-items-center justify-content-center">
+							<span>7 - 14 років</span>
+						</div>
+					</div>
+					<span class="flags__question">Вік?</span>
+				</div>
+				<div class="flags__row d-flex align-items-center justify-content-center flex-row-reverse">
+					<div class="flags__shadow">
+						<div class="flags__figure d-flex align-items-center justify-content-center">
+							<span>3000 грн</span>
+						</div>
+					</div>
+					<span class="flags__question">Ціна?</span>
+				</div>
+				<div class="flags__phone phone d-flex flex-column align-items-center">
+					<span>РЕЄСТРАЦІЯ ЗА НОМЕРОМ</span>
+					<a href="tel:0661234567">+38 (066)123 45 67</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="program">
+			<div class="container">
+				<h3 class="program__title title">Що у програмі?</h3>
+				<div class="row">
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-eat.svg" alt="eat">
+							<span>Смачна їжа</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-bible.svg" alt="bible">
+							<span>Цікаві біблійні уроки</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-puzzle.svg" alt="puzzle">
+							<span>Розвиваючі гуртки</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-circle.svg" alt="circle">
+							<span>Купання на озері</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-aim.svg" alt="aim">
+							<span>Активні ігри та розваги</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-microphone.svg" alt="microphone">
+							<span>Яскрава вечірня шоу програма</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-gift.svg" alt="gift">
+							<span>Призи та подарунки</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-3">
+						<div class="program__item d-flex flex-column align-items-center">
+							<img src="images/dist/icons/icon-fire.svg" alt="fire">
+							<span>Вечори біля вогнища</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="command">
+			<div class="command__container container">
+				<h3 class="command__title title">Команда</h3>
+				<div id="command__slider" class="command__slider">
+					<div class="command__slider-item">
+						<img src="images/dist/command/angelina_leader.jpg" alt="person1">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Ангеліна Михайлюк</span>
+							<span class="description">18 років <br> Лідер</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/valya_helper.jpg" alt="person2">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Валя Семененко</span>
+							<span class="description">20 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/maks_helper.jpg" alt="person3">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Макс Бондарук</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/nastya_helper.jpg" alt="person4">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Настя Смірнова</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
 
-	<div style="max-width: 700px; margin: auto">
+					<div class="command__slider-item">
+						<img src="images/dist/command/13.jpg" alt="person5">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Ангеліна Михайлюк</span>
+							<span class="description">18 років <br> Лідер</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/14.jpg" alt="person6">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Валя Семененко</span>
+							<span class="description">20 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/15.jpg" alt="person7">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Макс Бондарук</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/16.jpg" alt="person8">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Настя Смірнова</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/6.jpg" alt="person9">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Ангеліна Михайлюк</span>
+							<span class="description">18 років <br> Лідер</span>
+						</div>
+					</div>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/10.jpg" alt="person10">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Валя Семененко</span>
+							<span class="description">20 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/9.jpg" alt="person11">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Макс Бондарук</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/3.jpg" alt="person12">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Настя Смірнова</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
 
-	</div>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/5.jpg" alt="person13">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Ангеліна Михайлюк</span>
+							<span class="description">18 років <br> Лідер</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/7.jpg" alt="person14">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Валя Семененко</span>
+							<span class="description">20 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/1.jpg" alt="person15">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Макс Бондарук</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/4.jpg" alt="person16">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Настя Смірнова</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
 
-<!--#include virtual="/parts/footer.html" -->
+					<div class="command__slider-item">
+						<img src="images/dist/command/11.jpg" alt="person17">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Ангеліна Михайлюк</span>
+							<span class="description">18 років <br> Лідер</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/2.jpg" alt="person18">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Валя Семененко</span>
+							<span class="description">20 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item man">
+						<img src="images/dist/command/12.jpg" alt="person19">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Макс Бондарук</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+					<div class="command__slider-item">
+						<img src="images/dist/command/8.jpg" alt="person20">
+						<div class="slider-info d-flex flex-column">
+							<span class="name">Настя Смірнова</span>
+							<span class="description">18 років <br> Помічник лідера</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gallery">
+			<div class="gallery__container container d-flex flex-column align-items-center justify-content-center">
+				<div class="gallery__row row">
+					<div class="col-12 col-md-6">
+						<a href="images/dist/gallery/1.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/1.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="images/dist/gallery/2.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/2.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="images/dist/gallery/3.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/3.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="images/dist/gallery/4.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/4.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-6 col-md-3">
+						<a href="images/dist/gallery/5.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/5.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-12 col-md-6">
+						<a href="images/dist/gallery/6.jpg" data-lightbox="gallery">
+							<img data-lightbox="gallery" class="photo" src="images/dist/gallery/6.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<a href="" class="gallery__btn btn-main d-flex align-items-center">Більше фото</a>
+			</div>
+		</div>
+		
+		<div class="questions">
+			<div class="questions__container container">
+				<h4 class="questions__title title">Запитання - відповіді</h4>
+				<div class="questions__accordeon accordeon">
+					
+					<div class="accordeon__item">
+						<div class="accordeon__title d-flex">
+							<div class="accordeon__arrow">
+								<span class="accordeon__arrow-item"></span>
+							</div>
+							<span class="accordeon__title-text">Як відбувається реєстрація в табір?</span>
+						</div>
+						<div class="accordeon__content">
+							Для реєстрації напиши нам в інстаграм <a href="https://www.instagram.com/startup_tabir/">@startup_tabir</a> або зателефонуй за номером <a href="tel:+380661234567">+380661234567</a>
+						</div>
+					</div>
+					<div class="accordeon__item">
+						<div class="accordeon__title d-flex">
+							<div class="accordeon__arrow">
+								<span class="accordeon__arrow-item "></span>
+							</div>
+							<span class="accordeon__title-text">Як потрібно добиратись до табору?</span>
+						</div>
+						<div class="accordeon__content">
+							Збір учасників та спільний виїзд буде зранку за адресою м. Луцьк, вул. Конякіна 39а. Про точний час ми повідомляємо особисто.
+						</div>
+					</div>
+					<div class="accordeon__item">
+						<div class="accordeon__title d-flex">
+							<div class="accordeon__arrow">
+								<span class="accordeon__arrow-item "></span>
+							</div>
+							<span class="accordeon__title-text">Хто організовує табір?</span>
+						</div>
+						<div class="accordeon__content">
+							Табір організовують волонтери з церкви «Царство Боже» м. Луцька і волонтери молодіжного клубу «Water Walkers».
+						</div>
+					</div>
+					<div class="accordeon__item">
+						<div class="accordeon__title d-flex">
+							<div class="accordeon__arrow">
+								<span class="accordeon__arrow-item "></span>
+							</div>
+							<span class="accordeon__title-text">Мені більше 14 років, але я дуже хочу поїхати в табір!</span>
+						</div>
+						<div class="accordeon__content">
+							Для учасників 15+ волонтери клубу «Water Walkers» <a class="underline" href="https://wwcamps.org/summer-camp/">літній</a> та <a class="underline" href="https://wwcamps.org/">зимовий</a> молодіжні табори.
+						</div>
+					</div>
+					
+				</div>
+				<div class="questions__phone phone d-flex flex-column align-items-center">
+					<span>РЕЄСТРАЦІЯ ЗА НОМЕРОМ</span>
+					<a href="tel:0661234567">+38 (066)123 45 67</a>
+				</div>
+				<div class="questions__subtext d-flex justify-content-center">
+					<span>Не хочеш чекати так довго? У нас є пропозиція!</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="banner">
+			<div class="banner__container container">
+				<div class="banner__logo d-flex justify-content-center">
+					<img src="images/dist/teens.png" alt="teens">
+				</div>
+				<div class="banner__text">
+					Протягом року ми проводимо зустріч клубу для підлітків - <span>Start up teens</span>
+				</div>
+				<div class="row flex-column">
+					<div class="col-12">
+						<div class="banner__row d-flex justify-content-between align-items-center">
+							<span class="">Коли?</span>
+							<div>найближча дата в інстаграм <a href="#">@start_up_teens</a></div>
+						</div>
+					</div>
+					<div class="col-8 col-lg-6 align-self-end">
+						<div class="banner__row second d-flex justify-content-between align-items-center">
+							<span class="">Вік?</span>
+							<div>10 - 14 років</div>
+						</div>
+					</div>
+					<div class="col-10 col-lg-8">
+						<div class="banner__row third d-flex justify-content-between align-items-center">
+							<span class="">Де?</span>
+							<div>Конякіна 39а, «Царство Боже»</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="footer d-flex justify-content-center">
+			<ul class="d-flex">
+				<li>
+					<a href="#">
+						<i class="icon-tik-tok"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-phone"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="js/lightbox/lightbox.js"></script>
+		<script src="js/app.min.js"></script>
+		<script>
+			lightbox.option({
+				disableScrolling: true,
+				resizeDuration: 400,
+			})
+		</script>
+	</body>
+</html>

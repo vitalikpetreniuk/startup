@@ -1,0 +1,11 @@
+.title {
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 66px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	@include media-max(575) {
+		font-size: 21px;
+		line-height: 26px;
+	}
+}

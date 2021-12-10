@@ -1,0 +1,143 @@
+.accordeon {
+	max-width: 1095px;
+	width: 100%;
+	margin: 0 auto;
+	&__item {
+		padding: 20px 57px;
+		margin-bottom: 10px;
+		background: #FBF6F0;
+		border-radius: 15px;
+		@include media-max(1440) {
+			padding: 20px;
+		}
+	}
+	&__title {
+		position: relative;
+		display: block;
+		margin-bottom: 2px;
+		color: #202020;
+		font-size: 28px;
+		text-decoration: none;
+		border-radius: 3px;
+		-webkit-transition: background-color 0.2s;
+		transition: background-color 0.2s;
+		cursor: pointer;
+		&:hover {
+			transition: all 0.5s ease-out;
+		}
+		&-text {
+			display: inline-block;
+			max-width: 765px;
+			position: relative;
+			cursor: pointer;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			letter-spacing: 0.05em;
+			@include media-max(991) {
+				max-width: 510px;
+			}
+			@include media-max(767) {
+				max-width: 340px;
+			}
+			@include media-max(575) {
+				font-size: 14px;
+				line-height: 17px;
+			}
+			@include media-max(450) {
+				max-width: 200px;
+			}
+		}
+	}
+	&__content {
+		padding-top: 15px;
+		padding-bottom: 20px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0.05em;
+		margin-bottom: 2px;
+		display: none;
+		a {
+			font-weight: 700;
+			&.underline {
+				font-weight: 500;
+				text-decoration: underline;
+			}
+		}
+		@include media-max(575) {
+			font-size: 14px;
+			line-height: 19px;
+			padding-top: 7px;
+		}
+	}
+	&-active {
+		.accordeon {
+			&__arrow {
+				background: #AEE6E6;
+				&-item {
+					&::after {
+						width: 0;
+					}
+				}
+			}
+		}
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		right: 0;
+		display: inline-block;
+		vertical-align: middle;
+		width: 42px;
+		height: 42px;
+		text-align: center;
+		color: #fff;
+		line-height: 30px;
+		font-size: 20px;
+		font-weight: 700;
+		background: #FFDA77;
+		border-radius: 50%;
+		-webkit-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		@include media-max(575) {
+			width: 28px;
+			height: 28px;
+		}
+		&-item {
+			font-weight: 700;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 24px;
+				height: 4px;
+				background: #000000;
+				@include media-max(575) {
+					width: 16px;
+					height: 2px;
+				}
+			}
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) rotate(-90deg);
+				width: 24px;
+				height: 4px;
+				background: #000000;
+				transition: .2s;
+				@include media-max(575) {
+					width: 16px;
+					height: 2px;
+				}
+			}
+		}
+	}
+}

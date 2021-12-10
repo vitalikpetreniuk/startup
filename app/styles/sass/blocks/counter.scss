@@ -1,0 +1,121 @@
+.counter {
+	text-align: center;
+	padding-bottom: 55px;
+	background: linear-gradient(180deg, #AEE6E6 0%, #FBF6F0 100%);
+	@include media-max(991) {
+		margin-top: 561px;
+	}
+	@include media-max(767) {
+		margin-top: 483px;
+	}
+}
+
+
+
+
+
+.ft-digits {
+	position: relative;
+}
+
+.ft-digit {
+	border: none;
+	height: 115px;
+}
+
+.ft-shifter {
+	font-size: 81px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	@include media-max(1199) {
+		font-size: 50px;
+	}
+	@include media-max(767) {
+		font-size: 50px;
+	}
+	@include media-max(520) {
+		font-size: 21px;
+	}
+}
+
+.ft-space {
+	width: 160px;
+	position: relative;
+	&::before {
+		content: ':';
+		font-size: 54px;
+		font-weight: 700;
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+		@include media-max(1199) {
+			font-size: 48px;
+		}
+		@include media-max(767) {
+			font-size: 32px;
+		}
+		@include media-max(520) {
+			font-size: 21px;
+		}
+	}
+	@include media-max(1199) {
+		width: 100px;
+	}
+	@include media-max(767) {
+		width: 42px;
+	}
+	@include media-max(520) {
+		width: 30px;
+	}
+}
+
+.ft-delimiter {
+	margin: 0 70px;
+	&::before {
+		font-size: 54px;
+		font-weight: 700;
+		@include media-max(1199) {
+			font-size: 48px;
+		}
+		@include media-max(767) {
+			font-size: 32px;
+		}
+		@include media-max(520) {
+			font-size: 21px;
+		}
+	}
+	@include media-max(1199) {
+		margin: 0 50px;
+	}
+	@include media-max(767) {
+		margin: 0 21px;
+	}
+	@include media-max(520) {
+		margin: 0 15px;
+	}
+}
+
+.ft-caption {
+	font-size: 32px;
+	font-weight: 600;
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	@include media-max(1199) {
+		font-size: 20px;
+		bottom: -7px;
+	}
+	@include media-max(767) {
+		font-size: 14px;
+		bottom: -3px;
+	}
+	@include media-max(520) {
+		text-transform: lowercase;
+	}
+}
+
+.ft-digit:first-child {
+	border: none;
+}

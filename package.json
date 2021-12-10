@@ -42,5 +42,11 @@
 		"terser-webpack-plugin": "^5.2.4",
 		"webpack": "^5.59.1",
 		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"fancy-timer": "^1.0.3",
+		"jquery": "^3.6.0",
+		"lightbox2": "^2.11.3",
+		"slick-carousel": "^1.8.1"
 	}
 }

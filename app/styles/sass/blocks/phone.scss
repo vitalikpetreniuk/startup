@@ -1,0 +1,23 @@
+.phone {
+	span {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		@include media-max(575) {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+	a {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 42px;
+		letter-spacing: 0.05em;
+		@include media-max(575) {
+			font-size: 21px;
+			line-height: 27px;
+		}
+	}
+}

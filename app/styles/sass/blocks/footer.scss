@@ -1,0 +1,24 @@
+.footer {
+	background: linear-gradient(180deg, #AEE6E6 0%, #FBF6F0 100%);
+	padding: 37px 0 32px;
+	@include media-max(1440) {
+		padding: 25px 0;
+	}
+	@include media-max(575) {
+		padding: 10px 0;
+	}
+	ul {
+		li {
+			&:not(:last-of-type) {
+				margin-right: 100px;
+				@include media-max(1440) {
+					margin-right: 85px;
+				}
+				@include media-max(575) {
+					margin-right: 48px;
+				}
+			}
+			a {}
+		}
+	}
+}
