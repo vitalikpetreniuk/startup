@@ -106,5 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
+	
+	$('.header__nav ul li').click(function() {
+		$('.header__nav ul li').removeClass('current')
+		$(this).addClass('current')
+	})
 
 })

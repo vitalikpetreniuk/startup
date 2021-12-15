@@ -89,13 +89,6 @@
 					}
 				}
 				&.current {
-					max-width: 200px;
-					@include media-max(1550) {
-						max-width: 140px;
-					}
-					@include media-max(991) {
-						max-width: none;
-					}
 					@include media-max(575) {
 						margin-left: 15px;
 					}
