@@ -1,8 +1,8 @@
 .program {
-	padding: 141px 0 228px;
+	padding: 141px 0 150px;
 	background: linear-gradient(180deg, #FFDA77 0%, #FBF6F0 100%);
 	@include media-max(1440) {
-		padding: 130px 0 191px;
+		padding: 130px 0 60px;
 	}
 	@include media-max(991) {
 		padding-bottom: 63px;

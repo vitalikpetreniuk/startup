@@ -34,10 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		infinite: true,
 		responsive: [
 			{
+				breakpoint: 1430,
+				settings: {
+					arrows: false
+				}
+			},
+			{
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
+					arrows: false
 				}
 			},
 			{
@@ -73,5 +80,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		$this.toggleClass("accordeon-active");
 		$this.next().slideToggle();
 	});
+
+
+	$('a[href^="#"]').click(function (e) {
+		let anchor = $(this).attr('href');
+		e.preventDefault()
+		if ($(window).width() > 1550) {
+		  //> 1550
+			$('html, body').animate({
+				scrollTop: $(anchor).offset().top - 112
+			}, 0)
+		} else if ($(window).width() > 991 && $(window).width() < 1551) {
+			// < 1550 and > 991
+			$('html, body').animate({
+				scrollTop: $(anchor).offset().top - 85
+			}, 0)
+		} else {
+			// < 991
+			$('html, body').animate({
+				scrollTop: $(anchor).offset().top
+			}, 0)
+			$('.header__nav.active ul li').on("click", function () {
+				$('.header__nav').removeClass('active')
+				$('body').removeClass('_over-hidden')
+			})
+		}
+	})
 
 })

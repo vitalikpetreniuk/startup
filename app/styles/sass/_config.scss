@@ -15,6 +15,7 @@ $gutter: $grid-gutter-width;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "mixins";
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
@@ -63,6 +64,13 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	background: #FBF6F0;
+	padding-top: 112px;
+	@include media-max(1550) {
+		padding-top: 85px;
+	}
+	@include media-max(991) {
+		padding-top: 0;
+	}
 }
 
 ._over-hidden {

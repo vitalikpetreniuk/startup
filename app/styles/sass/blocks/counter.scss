@@ -8,6 +8,9 @@
 	@include media-max(767) {
 		margin-top: 483px;
 	}
+	@include media-max(520) {
+		padding-top: 20px;
+	}
 }
 
 

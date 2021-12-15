@@ -151,14 +151,36 @@
 		}
 	}
 	&__btn {
-		position: absolute;
+		position: fixed;
 		right: 18px;
 		bottom: 25px;
 		z-index: 1;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: #0dcaf0;
+			width: 86px;
+			height: 86px;
+			top: -25%;
+			left: -25%;
+			background: rgba(255, 164, 91, 0.2);
+			border-radius: 50px;
+			filter: blur(6px);
+			opacity: 0;
+			visibility: hidden;
+			transition: .3s;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 		@include media-min(992) {
 			display: none;
 		}
-		button {
+		a {
 			border-radius: 50%;
 			background: linear-gradient(180deg, #FFDA77 0%, #FFA45B 100%);
 			border: 1px solid #FFFFFF;

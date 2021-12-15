@@ -1,4 +1,9 @@
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
 	padding: 25px 80px;
 	background: linear-gradient(180deg, #FFA45B 0%, #FFDA77 100%);
 	@include media-max(1550) {
@@ -6,6 +11,9 @@
 	}
 	@include media-max(1199) {
 		padding: 18px 40px;
+	}
+	@include media-max(991) {
+		position: static;
 	}
 	&__logo {
 		margin: 0 82px 0 0;
@@ -41,6 +49,7 @@
 		}
 		ul {
 			width: 100%;
+			gap: 10px;
 			@include media-max(991) {
 				flex-direction: column;
 				padding-bottom: 40px;
@@ -50,13 +59,6 @@
 			}
 			li {
 				display: flex;
-				max-width: 160px;
-				@include media-max(1550) {
-					max-width: 106px;
-				}
-				@include media-max(991) {
-					max-width: none;
-				}
 				&:not(:last-of-type) {
 					@include media-max(991) {
 						margin-bottom: 43px;
@@ -68,15 +70,15 @@
 					}
 				}
 				a {
+					text-align: center;
 					display: inline-block;
 					font-weight: 600;
-					font-size: 24px;
+					font-size: 16px;
 					line-height: 27px;
 					letter-spacing: 0.05em;
 					color: #FFFFFF;
 					transition: .4s;
 					@include media-max(1550) {
-						font-size: 16px;
 						line-height: 20px;
 					}
 					@include media-min(992) {
