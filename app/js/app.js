@@ -25,6 +25,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		reverseAnimation: true,
 	});
 
+	$(window).resize(function() {
+		const ft = new FancyTimer(timer, {
+			value: new Date((year + 1) + '-07-03'),
+			captions: {
+				days: 'Днів',
+				hours: 'Годин',
+				minutes: 'Хвилин',
+				seconds: 'Секунд'
+			},
+			showDays: 3,
+			reverseAnimation: true,
+		});
+	});
+
 	$('#command__slider').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,

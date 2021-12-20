@@ -1,5 +1,8 @@
 .command {
-	padding: 50px 0 131px;
+	padding: 0 0 131px;
+	@include media-min(992) {
+		transform: scale(.9);
+	}
 	@include media-max(767) {
 		padding: 14px 0 10px;
 	}

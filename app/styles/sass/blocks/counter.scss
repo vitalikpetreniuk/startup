@@ -1,15 +1,22 @@
 .counter {
 	text-align: center;
-	padding-bottom: 55px;
 	background: linear-gradient(180deg, #AEE6E6 0%, #FBF6F0 100%);
 	@include media-max(991) {
-		margin-top: 561px;
+		margin-top: calc(100vh - 85px);
+		//margin-top: 561px;
+		//margin-top: 885px;
 	}
 	@include media-max(767) {
-		margin-top: 483px;
+		//margin-top: 483px;
+		padding-bottom: 55px;
 	}
 	@include media-max(520) {
 		padding-top: 20px;
+	}
+	.timer {
+		@include media-min(992) {
+			transform: scale(.7);
+		}
 	}
 }
 

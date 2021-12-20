@@ -1,13 +1,17 @@
 .questions {
 	background: linear-gradient(180deg, #AEE6E6 0%, #FFDA77 100%);
-	padding: 100px 0 70px;
-	@include media-max(1440) {
-		padding: 80px 0 84px;
+	//padding: 100px 0 70px;
+	@include media-max(991) {
+		padding: 30px 0 84px;
 	}
 	@include media-max(575) {
 		padding: 38px 0 24px;
 	}
-	&__container {}
+	&__container {
+		@include media-min(992) {
+			transform: scale(.7);
+		}
+	}
 	&__title {
 		margin-bottom: 90px;
 		@include media-max(575) {

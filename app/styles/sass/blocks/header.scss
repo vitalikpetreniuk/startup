@@ -89,9 +89,6 @@
 					}
 				}
 				&.current {
-					@include media-max(575) {
-						margin-left: 15px;
-					}
 					a {
 						padding: 12px 19px;
 						background: #FFFFFF;

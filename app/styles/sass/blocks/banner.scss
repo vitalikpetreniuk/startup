@@ -1,13 +1,16 @@
 .banner {
-	padding: 115px 0;
+	//padding: 115px 0;
 	background: #000000;
-	@include media-max(1440) {
+	@include media-max(991) {
 		padding: 50px 0 68px;
 	}
 	@include media-max(575) {
 		padding: 45px 0 80px;
 	}
 	&__container {
+		@include media-min(992) {
+			transform: scale(.7);
+		}
 		& > div:last-of-type {
 			& > div:nth-of-type(2) {
 				margin: 23px 0 57px;

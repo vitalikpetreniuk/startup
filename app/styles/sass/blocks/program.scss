@@ -1,14 +1,20 @@
 .program {
-	padding: 141px 0 150px;
+	//padding: 141px 0 150px;
 	background: linear-gradient(180deg, #FFDA77 0%, #FBF6F0 100%);
-	@include media-max(1440) {
-		padding: 130px 0 60px;
-	}
+	//@include media-max(1440) {
+	//	padding: 70px 0 10px;
+	//}
 	@include media-max(991) {
-		padding-bottom: 63px;
+		//padding-bottom: 63px;
+		padding: 70px 0 10px;
 	}
 	@include media-max(575) {
 		padding: 51px 0 63px;
+	}
+	.container {
+		@include media-min(992) {
+			transform: scale(.7);
+		}
 	}
 	&__title {
 		margin-bottom: 147px;

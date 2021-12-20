@@ -1,17 +1,21 @@
 .main-video {
 	position: relative;
-	min-height: 970px;
+	//min-height: 970px;
+	height: calc(100vh - 112px);
 	@include media-max(1550) {
-		min-height: 646px;
+		//min-height: 646px;
+		height: calc(100vh - 85px);
 	}
 	@include media-max(991) {
+		//min-height: 646px;
+		height: 100vh;
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
 	@include media-max(767) {
-		min-height: 568px;
+		//min-height: 568px;
 	}
 	&::before {
 		content: '';
@@ -25,7 +29,7 @@
 	}
 	video {
 		width: 100%;
-		min-height: 970px;
+		//min-height: 970px;
 		height: 100%;
 		-o-object-fit: cover;
 		object-fit: cover;
@@ -33,12 +37,12 @@
 		top: 0;
 		left: 0;
 		@include media-max(1550) {
-			min-height: 646px;
-			height: 100%;
+			//min-height: 646px;
+			//height: 100%;
 		}
 		@include media-max(767) {
-			min-height: 568px;
-			height: 100%;
+			//min-height: 568px;
+			//height: 100%;
 		}
 	}
 	&__frame {
