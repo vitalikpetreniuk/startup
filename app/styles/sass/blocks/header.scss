@@ -58,6 +58,7 @@
 				align-items: flex-start !important;
 			}
 			li {
+				max-width: 150px;
 				display: flex;
 				&:not(:last-of-type) {
 					@include media-max(991) {
